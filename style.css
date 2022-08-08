@@ -1,7 +1,131 @@
 :root {
-  --primary-color: #348888;
+  --primary-color: #1b7f79;
   --secondary-color: #f24405;
-  --light-teal: #9ef8ee;
-  --dark-teal: #22babb;
-  --dark-orange: #f24405;
+  --light-teal: #72f2eb;
+  --dark-teal: #00ccc0;
+  --dark-red: #b50211;
+  --white: #f7f8fa;
+  --black: #171321;
+  --font-size: 1.3rem;
+  --mono: "Oxygen mono", monospace;
+  --sans: "Oxygen", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  background-color: var(--black);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: var(--secondary-color);
+}
+
+a:hover {
+  color: var(--dark-red);
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Intro Styles */
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.username {
+  font-family: var(--mono);
+}
+
+.username span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  display: block;
+  color: var(--dark-teal);
+}
+
+.profession {
+  font-size: 4rem;
+}
+
+/* Contact Me */
+#contact {
+  padding: 3rem 0;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+.contact-details {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-email {
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--dark-red);
+  color: var(--white);
+  padding: 0.5rem 0.75rem;
+  margin-top: 3rem;
+}
+
+.contact-email:hover {
+  color: var(--black);
+  font-weight: 700;
+}
+
+/* Nav Section */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--white);
+  display: block;
+}
+
+nav h1 a {
+  font-family: var(--sans);
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
 }
